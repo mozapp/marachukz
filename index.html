@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--BOOTSTRAP 5 STYLE LINK-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--Bootstrap icon-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <!--CUSTOM CSS STYLE LINK-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Marachukz</title>
+</head>
+<body>
+    <!--MAIN NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top custom-mainnav-style">
+      <div class="container">
+        <h2><a class="navbar-brand" href="#">MARACHUKS</a></h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle custom-navlink-account" href="#" id="offcanvasNavbarDropdown" role="button" 
+                data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="#">SignUp</a></li>
+                  <li><a class="dropdown-item" href="#">SignIn</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Customer Care</a></li>
+                </ul>
+              </li>
+            </ul>
+                <form class="d-lg-none custom-search-navbar">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--MAIN NAVBAR END-->
+
+    <!--CAROUSEL SLIDER-->
+    <div id="carouselExampleCaptions" class="carousel slide custom-carousel-style" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner custom-carousel-inner">
+          <div class="carousel-item active custom-carousel-item">
+            <img src="images/Heineken.jpg" class="custom-carousel-img img-fluid d-block w-100" alt="...">
+            <div class="carousel-caption top-0 mt-5 pt-5 custom-carousel-caption">
+              <h5>Heineken, Premuim Quality</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, quam.</p>
+            </div>
+          </div>
+          <div class="carousel-item custom-carousel-item">
+            <img src="images/FINANCE ASIA WEB.jpg" class="custom-carousel-img img-fluid d-block w-100" alt="...">
+            <div class="carousel-caption top-0 mt-5 pt-5 custom-carousel-caption">
+              <h5>Refresh with Amstel Malt</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, quam..</p>
+            </div>
+          </div>
+          <div class="carousel-item custom-carousel-item">
+            <img src="images/Nbplc-img.png" class="custom-carousel-img img-fluid d-block w-100" alt="...">
+            <div class="carousel-caption top-0 mt-5 pt-5 custom-carousel-caption">
+              <h5>Black is beauty</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, quam.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--CAROUSEL SLIDER END-->
+
+    <!--PRODUCTS SECTION CARDS-->
+    <section class="custom-card-container pt-5 pb-2">
+      <div class="container mb-5 ">
+      <div class="row g-4">
+        <div class="col col-lg-3 h-50">
+          <div class="card h-50 custom-card">
+            <img src="images/33-export.png" class="card-img-top custom-img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-lg-1">Goldberg</h5>
+              <p class="card-text fs-lg-5">Nigeria Brewery</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 h-50">
+          <div class="card h-50 custom-card">
+            <img src="images/radler-citruc-min.png" class="card-img-top custom-img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-lg-1">Star Radler</h5>
+              <p class="card-text fs-lg-5">Nigeria Brewery</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 h-50">
+          <div class="card h-50 custom-card">
+            <img src="images/gulder.png" class="card-img-top custom-img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-lg-1">Gulder</h5>
+              <p class="card-text fs-lg-5">Nigeria Brewery</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-3 h-50">
+          <div class="card h-50 custom-card">
+            <img src="images/legend-beer.png" class="card-img-top custom-img-card" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mb-lg-1">Legend</h5>
+              <p class="card-text fs-lg-5">Nigeria Brewery</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--PRODUCTS CARDS END-->
+      </div>
+    </section>
+    <!--PRODUCTS SECTION CARDS END-->
+
+    <!--PRODUCTS SECTION-->
+    <section class="container-fluid mb-5 stick-gb">
+      <div class="stick-bg-over">
+      <div class="custom-text-center">
+        <h2>Good to see you</h2>
+        <p>Hope you're enjoying our services</p>
+      </div>
+      </div>
+    </section>
+    <!--PRODUCTS SECTION END-->
+
+      <!--QUOTES-->
+    <section class="container custom-quote-section mb-5">
+      <div class="row g-0 justify-content-center">
+        <div class="col-md-4">
+          <img src="images/trophy-banner1.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body">
+            <h3 class="card-title">Title</h3>
+            <p class="card-text mb-lg-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam praesentium fugit ab fuga a officia autem 
+              aliquam soluta consectetur recusandae mollitia modi sed qui necessitatibus deleniti, nesciunt doloremque accusamus ad.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a class="nav-link custom-quote-btn" href="#">Read more..</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--QUOTES END-->
+
+    <!--OUR VALUE-->
+    <section class="custom-our-team">
+      <div class="container">
+        <div class="row g-4">
+          <div class="custom-text-value text-center justify-content-center">
+            <h5 class="fw-bolder">OUR VISION AND MISSION</h5>
+            <p>Whis is who we are and what our focus is.</p>
+          </div>
+          <div class="col-lg-3">
+            <div class="card h-100">
+              <img src="images/mision.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Our Mission</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card h-100">
+              <img src="images/vision.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Our Vision</h5>
+                <p class="card-text">This is a short card. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card h-100">
+              <img src="images/performance.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Our Performance</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card h-100">
+              <img src="images/value.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Our Value</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--OUR VALUE-->
+
+    <!--PRODUCTS ADVERT-->
+    <div class="container-fluid custom-advert-gb"></div>
+    <!--PRODUCTS SECTION END-->
+
+    <!--TESTIMONIES-->
+    <section class="container-fluid testimonies">
+      <div class="row custom-testimoni-row">
+        <div class="col-lg-4 col-sm-12">
+          <div class="card custom-testimoni-card">
+            <div class="card-body custom-testimoni-cardbody">
+              <img src="images/man4.jpg" class="testimoni-img" alt="" srcset="">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="card custom-testimoni-card">
+            <div class="card-body custom-testimoni-cardbody">
+              <img src="images/man4.jpg" class="testimoni-img" alt="" srcset="">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <div class="card custom-testimoni-card">
+            <div class="card-body custom-testimoni-cardbody">
+              <img src="images/man4.jpg" class="testimoni-img" alt="" srcset="">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--TESTIMONIES END-->
+
+    <!--SPONSORS-->
+    <section class="sponsor-logo">
+      <div class="container-fluid sponsor-container">
+        <div class="sponsor-row">
+          <img src="images/33-export.png" alt="">
+          <img src="images/Amstel-malt.png" alt="">
+          <img src="images/goldberg.png" alt="">
+          <img src="images/gulder.png" alt="">
+          <img src="images/Hero-beer.jpg" alt="">
+          <img src="images/legend-beer.png" alt="">
+          <img src="images/malt-drink.png" alt="">
+          <img src="images/radler-citruc-min.png" alt="">
+          <img src="images/33-export.png" alt="">
+          <img src="images/Amstel-malt.png" alt="">
+          <img src="images/goldberg.png" alt="">
+          <img src="images/gulder.png" alt="">
+          <img src="images/Hero-beer.jpg" alt="">
+          <img src="images/legend-beer.png" alt="">
+          <img src="images/malt-drink.png" alt="">
+          <img src="images/radler-citruc-min.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!--SPONSORS END-->
+
+
+    <!--FOOTER-->
+    <section class="footer-main">
+      <div class="container">
+        <div class="row pt-4 text-start">
+          <div class="col-lg-3 col-sm-12">
+            <h4>MARACHUKS</h4>
+            <p>Dealer of all kinds of beers. <br>
+            International & Nigerian Breweries.</p>
+          </div>
+          <div class="col custom-footer-col">
+            <h6 class="fw-bold">Site Map</h6>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </div>
+          <div class="col custom-footer-col">
+            <h6 class="fw-bold">Links</h6>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+          </div>
+          <div class="col custom-footer-col">
+            <h6 class="fw-bold">Services</h6>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link1</a></li>
+          </div>
+          <div class="col-lg-3 col-sm-4 custom-footer-col">
+            <h6 class=" fw-bold">Media</h6>
+            <div>
+              <a href="#"><i class="bi bi-instagram fs-2 text-light"></i></a>
+              <a href="#"><i class="bi bi-facebook fs-2 text-light"></i></a>
+              <a href="#"><i class="bi bi-twitter fs-2 text-light"></i></a>
+              <a href="#"><i class="bi bi-linkedin fs-2 text-light"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="mini-footer">
+          <h5>Marachuks Enterprise</h5>
+          <p>&copy; 2024. Designed by Moses Benneth</p>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER END-->
+
+
+
+
+    <!--BOOTSTRAP 5 JAVASCRIPT LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!---->
